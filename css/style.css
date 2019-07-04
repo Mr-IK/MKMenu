@@ -8,6 +8,10 @@
   z-index: 9999;
 }
 
+.parent{
+  margin: auto;
+}
+
 body{
   background: #960202;
 }
