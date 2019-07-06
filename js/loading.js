@@ -10,7 +10,7 @@ $(window).on('load',function(){
     flatcolor = true;
     return;
   }
-  $('#warning-bg').fadeOut(1);
+  setTimeout('unloadWarning()',1);
   if(flatcolor != 'true'){
     setTimeout('changeflat()',2000);
     setTimeout('loadBar()',3000);
@@ -22,7 +22,6 @@ $(window).on('load',function(){
 });
 
 $(document).ready(function () {
-  $.cookie('colortype','false',{ expires: 7, path: '/'  });
   $('#togglebutton').on('click',function(){
     if(flatcolor){
       setTimeout('unloadBar()',100);
