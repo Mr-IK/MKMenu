@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
     <script type="text/javascript" src="js/loading.js"></script>
     <title>Coming soon...</title>
     <link rel="shortcut icon" href="image/icon.ico">
@@ -22,9 +23,22 @@
         <div class="animation">Now Loading...</div>
       </div>
     </div>
+    <div id="warning-bg">
+      <div id="warning">
+        <p>このページには刺激の強い色が使われています。</p>
+        <div id="switch_info">
+          <p>OFFにすると刺激の弱い色に変更します。</p>
+        </div>
+      </div>
+      <div class="switch">
+        <input id="switch" checked type="checkbox">
+        <label for="switch"></label>
+      </div>
+      <button id="close" class="close-button">Close</button>
+    </div>
     <div id="main-contents">
-      <div class="comingsoon">ナニカを作っている…<br>
-      いつか完成するかも…。</div>
+      <div class="comingsoon">ナニカを作っている…<br>いつか完成するかも…。
+      </div>
     </div>
   </body>
 </html>
