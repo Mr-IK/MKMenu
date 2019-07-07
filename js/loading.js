@@ -4,7 +4,7 @@ $(window).on('load',function(){
   $('#loading').delay(1000).fadeOut(900);
   $('#loader-bg').delay(2000).fadeOut(900);
   flatcolor = $.cookie('colortype');
-  if (typeof a === "undefined") {
+  if (flatcolor == null) {
     //警告画面を出す
     setTimeout('loadWarning()',2000);
     flatcolor = true;
