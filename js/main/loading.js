@@ -10,12 +10,12 @@ $(window).on('load',function(){
   }
   setTimeout('byeWarning()',0);
   if(flatcolor != 'true'){
-    setTimeout('changeflat()',0);
-    setTimeout('loadMain()',3000);
-    setTimeout('loadBar()',4000);
+    setTimeout('loadflat()',0);
+    setTimeout('loadMain()',1000);
+    setTimeout('loadBar()',2000);
   }else{
-    setTimeout('loadMain()',3000);
-    setTimeout('loadBar()',4000);
+    setTimeout('loadMain()',1000);
+    setTimeout('loadBar()',2000);
   }
 });
 
