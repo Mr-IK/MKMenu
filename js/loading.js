@@ -10,7 +10,7 @@ $(window).on('load',function(){
     flatcolor = true;
     return;
   }
-  setTimeout('unloadWarning()',1);
+  setTimeout('byeWarning()',1);
   if(flatcolor != 'true'){
     setTimeout('changeflat()',2000);
     setTimeout('loadBar()',3000);
