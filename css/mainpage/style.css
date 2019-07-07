@@ -95,28 +95,6 @@ header {
   }
 }
 
-.animation{
-  font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #27c300;
-  -webkit-animation: lodanimetion 1000ms ease-out forwards infinite;
-  animation: lodanimetion 1000ms ease-out forwards infinite;
-}
-
-@keyframes lodanimetion {
-  from,to {
-        opacity: 0;
-  }
-  50% {
-        opacity: .8;
-  }
-}
-
 #nav {
   list-style: none;
   font-size: 0;

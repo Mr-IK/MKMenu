@@ -1,12 +1,10 @@
 var flatcolor = 'true';
 $(window).on('load',function(){
   // 消えるタイミングはお好みで
-  $('#loading').delay(1000).fadeOut(900);
-  $('#loader-bg').delay(2000).fadeOut(900);
   flatcolor = $.cookie('colortype');
   if (flatcolor == null) {
     //警告画面を出す
-    setTimeout('loadWarning()',2000);
+    setTimeout('loadWarning()',0);
     flatcolor = 'true';
     return;
   }

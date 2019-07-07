@@ -17,10 +17,10 @@ $(window).on('load',function(){
 });
 
 $(document).ready(function () {
-  $('a#in_link_about').on('click',function(){
+  $('a#in_link_home').on('click',function(){
     setTimeout('unloadBar()',100);
     setTimeout('unloadMain()',200);
-    setTimeout('linkabout()',500);
+    setTimeout('linkhome()',500);
     return false;
   });
   $('#togglebutton').on('click',function(){
@@ -44,8 +44,8 @@ $(document).ready(function () {
   });
 });
 
-function linkabout(){
-  window.location.href='about.html';
+function linkhome(){
+  window.location.href='index.html';
 }
 
 function unloadBar(){
