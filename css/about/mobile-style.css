@@ -8,10 +8,6 @@
   #switch_info{
     font-size: 20px;
   }
-
-  .nav-button{
-    font-size: 25px;
-  }
 }
 
 /* 600px〜959px：タブレット
@@ -27,16 +23,6 @@
 
   .comingsoon{
     font-size: 30px;
-  }
-
-  #nav li a img {
-    height: 10vh;
-  }
-
-  .nav-button{
-    line-height: 10vh;
-    height: 10vh;
-    font-size: 20px;
   }
 }
 
@@ -58,16 +44,6 @@
 
   .comingsoon{
     font-size: 23px;
-  }
-
-  #nav li a img {
-    height: 8vh;
-  }
-
-  .nav-button{
-    line-height: 8vh;
-    height: 8vh;
-    font-size: 16px;
   }
 }
 
@@ -91,16 +67,6 @@
   .comingsoon{
     font-size: 20px;
   }
-
-  #nav li a img {
-    height: 7vh;
-  }
-
-  .nav-button{
-    line-height: 7vh;
-    height: 7vh;
-    font-size: 14px;
-  }
 }
 
 /* 〜479px：スマートフォン縦
@@ -120,15 +86,5 @@
 
   .comingsoon{
     font-size: 15px;
-  }
-
-  #nav li a img {
-    height: 6vh;
-  }
-
-  .nav-button{
-    line-height: 6vh;
-    height: 6vh;
-    font-size: 12px;
   }
 }

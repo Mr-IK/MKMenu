@@ -1,12 +1,3 @@
-#loader-bg{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-  background: #000;
-}
-
 body{
   display: relative;
   top: 0%;
@@ -14,7 +5,11 @@ body{
   width: 100vw;
   margin: auto;
   background: #960202;
+  /* フッタの高さと等しいネガティブマージン */
+  /* また最後の子要素の潜在的なマージンとしても機能 */
+  margin-bottom: -50px;
 }
+
 
 .body-flat{
   background: #dfd65e;
@@ -54,12 +49,6 @@ body{
   }
 }
 
-header {
-  position: fixed;
-  width: 100vw;
-  z-index: 10000;
-}
-
 #main-contents{
   opacity: 0;
   font-weight: bold;
@@ -95,110 +84,6 @@ header {
   }
 }
 
-#nav {
-  list-style: none;
-  font-size: 0;
-  margin: 0px;
-  padding: 0px;
-  transform: translateY(-150px);
-}
-
-.nav-load{
-  animation-fill-mode: forwards;
-  animation-name: nav-animation;
-  animation-duration: 0.7s;
-}
-
-.nav-unload{
-  animation-name: nav-backani;
-  animation-duration: 0.7s;
-}
-
-@keyframes nav-animation {
-  from {
-        transform: translateY(-150px);
-  }
-  to {
-        transform: translateY(0px);
-  }
-}
-
-@keyframes nav-backani {
-  from {
-      transform: translateY(0px);
-  }
-  to {
-      transform: translateY(-150px);
-  }
-}
-
-#nav li {
-  text-align: center;
-  float: left;
-}
-
-#nav li a img {
-  height: 12vh;
-  width: 20vw;
-  -moz-transition: -moz-transform 0.2s linear;
-  -webkit-transition: -webkit-transform 0.2s linear;
-  -o-transition: -o-transform 0.2s linear;
-  -ms-transition: -ms-transform 0.2s linear;
-  transition: transform 0.2s linear;
-}
-
-#nav li a img:hover {
-  -webkit-filter: saturate(500%);
-  -moz-filter: saturate(500%);
-  -o-filter: saturate(500%);
-  -ms-filter: saturate(500%);
-  filter: saturate(500%);
-}
-
-.nav-button {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  display: block;
-  height: 12vh;
-  width: 13.333vw;
-  line-height: 12vh;
-  font-size: 30px;
-  background-color: #000000;
-}
-
-.nav-button:hover {
-  animation-fill-mode: forwards;
-  animation-name: nav-button-ani;
-  animation-duration: 0.3s;
-}
-
-#togglebutton{
-  border: none;
-}
-
-
-.btn-color-flat{
-  background-color: #05bba5;
-  color: #d9dafb;
-}
-
-.btn-color-cool{
-  background-color: #000000;
-  color: #ffffff;
-}
-
-@keyframes nav-button-ani {
-  from {
-    color: #fff;
-    background-color: #000000;
-  }
-  to {
-    background-color: #ffffff;
-    color: #000000;
-  }
-}
-
 .comingsoon{
   font-size: 40px;
   position: absolute;
@@ -209,134 +94,4 @@ header {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   color: #000000;
-}
-
-
-.switch input {
-    display: none;
-}
-.switch label {
-    font-style: normal;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 20px;
-    position: absolute;
-    text-align: center;
-    top: 65%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.switch label:before {
-    padding: 6px 10px;
-    content: 'O N';
-    border-radius: 6px 0 0 6px;
-    background: linear-gradient(to bottom, #F0F0F0 0%, #DDD 100%);
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) inset;
-    color: #333;
-}
-.switch label:after {
-    padding: 6px 10px;
-    content: 'OFF';
-    border-radius: 0 6px 6px 0;
-    background: #C30;
-    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.1) inset;
-    color: #FFF;
-}
-.switch input + label:hover:before {
-    opacity: 0.5;
-}
-.switch input:checked + label:before {
-    background: #9C0;
-    color: #FFF;
-    opacity: 1;
-}
-.switch input:checked + label:after {
-    background: linear-gradient(to bottom, #F0F0F0 0%, #DDD 100%);
-    color: #333;
-}
-.switch input:checked + label:hover:after {
-    opacity: 0.5;
-}
-
-#warning-bg{
-  opacity: 0;
-  position: fixed;
-  text-align: center;
-  line-height: 70vh;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: Times New Roman,"ＭＳ Ｐゴシック";
-  color: #2dc4b7;
-  width: 100vw;
-  height: 100vh;
-  top: 0px;
-  left: 0px;
-  background: #e7ee94;
-  transition: .7s;
-}
-
-#switch_info{
-  font-style: normal;
-  padding: 12px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  text-align: center;
-  top: 58%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.close-button {
-  text-decoration: none;
-  color: #575754;
-  font-weight: bold;
-  display: block;
-  height: 12vh;
-  width: 16vw;
-  line-height: 12vh;
-  font-size: 30px;
-  background-color: #6bf9f9;
-  position: absolute;
-  text-align: center;
-  top: 85%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  border-radius: 25px;
-}
-
-.close-button:hover {
-  animation-fill-mode: forwards;
-  animation-name: nav-button-ani;
-  animation-duration: 0.3s;
-}
-
-.warning-unload-ani{
-  animation-fill-mode: forwards;
-  animation-name: warn-unload;
-  animation-duration: 0.7s;
-}
-
-.warning-unload{
-  display: none;
-}
-
-@keyframes warn-unload {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }

@@ -7,24 +7,37 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    <script type="text/javascript" src="js/about/loading.js"></script>
     <title>Coming soon... | About</title>
-    <link rel="shortcut icon" href="image/icon.ico">
-    <ul id="nav">
-      <li><a id="in_link_home" href="/"><img src="image/iksite.png"></a></li>
-      <li><a class="nav-button" href="#">About</a></li>
-      <li><a class="nav-button" target="_blank" href="https://twitter.com/Mr_IK2302">Twitter</a></li>
-      <li><a class="nav-button" target="_blank" href="https://blog.mkserver.jp">Blog</a></li>
-      <li><a class="nav-button" target="_blank" href="https://github.com/Mr-IK">Github</a></li>
-      <li><a class="nav-button" href="#">?????</a></li>
-      <li><button id="togglebutton" class="nav-button">Change</button></li>
-    </ul>
+    <script>
+    //共通パーツ読み込み
+      $(function() {
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
   <body>
-    <div id="main-contents">
-      <div class="comingsoon">IKが作成中のサイトです。<br>
-        いろいろ試しているのでお楽しみにー。
-      </div>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="main-contents">
+          <h2>About</h2>
+          <div class="comingsoon">IKが作成中のサイトです。<br>
+            今はいろいろ試しているところ。<br>
+            上のメニューとかいろいろ見てみてねー。<br>
+          </div>
+          <h3>Description</h3>
+          <div class="description"><b>上のメニューバーについて</b><br><br>
+            <b>About:</b> このページへのリンクです。<br>
+            <b>Twitter:</b> 作者Twitterへのリンクです。<br>
+            <b>Blog:</b> 作者ブログへのリンクです。<br>
+            <b>Github:</b> 作者Githubへのリンクです。<br>
+            <b>???:</b> 未実装です。作成をお待ちください❤<br>
+            <b>Change:</b> 背景色などを クールに/目に優しく します。<br><br>
+            <b>???に何ができるの？</b><br><br>
+            これを書いている時点で決めていません。なんでしょうね？<br>
+          </div>
+        </div>
+        <div id="footer"></div>
     </div>
   </body>
 </html>
